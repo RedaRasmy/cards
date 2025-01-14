@@ -1,0 +1,20 @@
+{
+  "name": "cards",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(\u0016https://github.com/RedaRasmy/cards.git)"
+  },
+  "keywords": [
+    "cards",
+    "probabilities",
+    "games"
+  ],
+  "author": "Reda Rasmy",
+  "license": "ISC"
+}
