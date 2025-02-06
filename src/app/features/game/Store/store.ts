@@ -5,19 +5,34 @@ import gameOptions from "./slices/gameOptions";
 import settings from "./slices/settings";
 import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
+import sessionStorage from 'redux-persist/lib/storage/session'
 
-const persistConfig = {
+const rootPersistConfig = {
     key: "root",
     storage,
 };
 
+const cardsFlowPersistConfig = {
+    key: "game",
+    storage : sessionStorage,
+};
+
 const rootReducer = combineReducers({
-    cardsFlow,
-    gameOptions,
+    cardsFlow : persistReducer(
+        cardsFlowPersistConfig,
+        cardsFlow
+    ),
+    gameOptions : persistReducer(
+        cardsFlowPersistConfig,
+        gameOptions
+    ),
     settings,
 })
 
-const persistedReducer = persistReducer(persistConfig,rootReducer);
+const persistedReducer = persistReducer(
+    rootPersistConfig
+    ,rootReducer
+);
 
 const makeStore = () => {
     const store = configureStore({
