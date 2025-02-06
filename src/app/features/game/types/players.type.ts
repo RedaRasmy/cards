@@ -15,3 +15,8 @@ export type PlayersNumber = 2 | 3 | 4
 
 export type PlayerId = 0 | 1 | 2 | 3
 
+export type Player = {
+    name:string,
+    image:string
+}
+

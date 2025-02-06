@@ -10,13 +10,11 @@ export default function globalPlayCheck(
 ) {
     // check if game is ongoing
     if (state === "idle" || state.gameStatus === 'finished') {
-        console.log('state is idle or game finished')
         return state
     }
 
     // check if the card is playable 
     if (!isPlayable(cardToPlay, state.requirements)) {
-        console.log('not playable')
         return state
     }
 
@@ -33,7 +31,6 @@ export default function globalPlayCheck(
     })
 
     if (isLastCard) {
-        console.log('win')
         return {
             ...state,
             currentCard: cardToPlay ,

@@ -10,7 +10,6 @@ export default function playWithNormal(
     cardToPlay:Card
 ) {
     // newCurrentCard is cardToPlay
-    console.log('from play with normal')
 
     // get next player 
     const nextPlayer  = getNextPlayer(state.currentPlayer,state.playersNumber)
@@ -38,7 +37,6 @@ export default function playWithNormal(
         }
     ]
 
-    console.log('card to play',cardToPlay)
     return {
         ...state,
         currentCard : cardToPlay,

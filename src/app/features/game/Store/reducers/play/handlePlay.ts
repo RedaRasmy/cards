@@ -13,7 +13,6 @@ export default function handlePlay(
     state:CardsFlow,
     action:PayloadAction<{card:Card,botJudgeColor?:Color}>
 ) {
-    console.log('from handle play')
     const cardToPlay = action.payload.card
     const judgeColor = action.payload.botJudgeColor
 
