@@ -10,7 +10,6 @@ export default function draw(
 ) {
     const {currentPlayer,deck,hands,turns,playersNumber} = state
     
-    
     // finish game if there is only 1 card in deck
     if ( deck.length <= 1 ) return {
         ...state,
