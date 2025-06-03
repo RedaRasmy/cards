@@ -1,4 +1,4 @@
-# 🎴 Cards Game
+# 🎴 Cards
 
 A fast-paced, strategic card game where players compete against **scripted bots** with **easy, medium, and hard difficulty levels**. Play solo against **1, 2, or 3 opponents** for an engaging experience.
 
